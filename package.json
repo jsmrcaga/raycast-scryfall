@@ -1,6 +1,6 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "Scryfall",
+  "name": "scryfall",
   "title": "Scryfall",
   "description": "Search Scryfall from the comfort of Raycast",
   "icon": "scryfall-logo.png",
