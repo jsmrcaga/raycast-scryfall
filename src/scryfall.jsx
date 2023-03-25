@@ -49,8 +49,28 @@ const GridCardItem = ({ card, onSelected }) => {
 					}}
 				/>
 				<ActionPanel.Section title="Open in...">
-					<Action.OpenInBrowser title="Scryfall" shortcut={{ modifiers: ['cmd'], key: 's' }} url={card.scryfall_uri}/>
-					<Action.OpenInBrowser title="Gatherer" shortcut={{ modifiers: ['cmd'], key: 'g' }} url={card.related_uris.gatherer}/>
+					<Action.OpenInBrowser
+						title="Scryfall"
+						shortcut={{
+							modifiers: ['cmd'],
+							key: 's'
+						}}
+						url={card.scryfall_uri}
+						icon={{
+							source: 'scryfall-logo.png'
+						}}
+					/>
+					<Action.OpenInBrowser
+						title="Gatherer"
+						shortcut={{
+							modifiers: ['cmd'],
+							key: 'g'
+						}}
+						url={card.related_uris.gatherer}
+						icon={{
+							source: 'mtg.png'
+						}}
+					/>
 				</ActionPanel.Section>
 			</ActionPanel>
 		}
