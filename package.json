@@ -1,0 +1,44 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "Scryfall",
+  "title": "Scryfall",
+  "description": "Search Scryfall from the comfort of Raycast",
+  "icon": "scryfall-logo.png",
+  "author": "jsmrcaga",
+  "version": "0.0.0",
+  "categories": [
+    "Fun",
+    "Web",
+    "Productivity"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "scryfall",
+      "title": "Scryfall",
+      "subtitle": "Magic: the Gathering Card Search",
+      "description": "Search Scryfall's database for magic cards using Scryfall's query language",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "query",
+          "placeholder": "(c:b or c:w) t:creature o:\"hexproof\" f:standard",
+          "type": "text",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.48.9",
+    "@raycast/utils": "^1.5.2"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "raycast:lint": "ray lint",
+    "lint": "echo All good",
+    "publish": "ray publish"
+  }
+}
