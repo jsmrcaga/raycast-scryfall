@@ -103,6 +103,8 @@ const CardDetails = ({ id }) => {
 
 					<Detail.Metadata.Label title="Type" text={card.type_line}/>
 
+					<Detail.Metadata.Label title="Oracle" text={card.oracle_text}/>
+
 					<Detail.Metadata.TagList title="Legality">
 						{
 							legal_in.map(l => <Detail.Metadata.TagList.Item key={l} text={l}/>)
