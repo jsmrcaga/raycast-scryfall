@@ -1,0 +1,19 @@
+name: Publish to Raycast
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+  workflow_dispatch:
+
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    name: Publish
+
+    steps:
+      - uses: actions/checkout@master
+      - run: npm i
+      - run: npm run build
+      - run: npm run publish
